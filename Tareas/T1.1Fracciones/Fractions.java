@@ -8,8 +8,14 @@ public class Fractions{
     }
 
     public Fractions(int numerador, int denominador){
+
         this.numerador=numerador;
+        if(denominador==0){
+            System.out.println("Error");
+            denominador=1;
+        }
         this.denominador=denominador;
+
     }
 
     public int getNum(){
@@ -45,7 +51,7 @@ public class Fractions{
         int sumNums=0;
 
         multDenoms=denominador*fraction1.getDen();
-        sumNums=(multDenoms*denominador/numerador)+(multDenoms*fraction1.getDen()/fraction1.getNum());
+        sumNums=((multDenoms/denominador)*numerador)+((multDenoms/fraction1.getDen())*fraction1.getNum());
         Fractions result=new Fractions(sumNums, multDenoms);
 
         return result;

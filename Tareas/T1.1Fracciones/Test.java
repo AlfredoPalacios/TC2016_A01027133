@@ -2,8 +2,8 @@ public class Test{
 
     public static void main(String[] args){
         
-        Fractions a=new Fractions(10, 14);
-        Fractions b=new Fractions(4, 3);
+        Fractions a=new Fractions(1, 3);
+        Fractions b=new Fractions(1, 2);
 
         Fractions c=a.sum(b);
         c.simplify();
@@ -15,7 +15,7 @@ public class Test{
         c.printFraction();
         c=a.multiply(b);
         c.simplify();
-        System.out.println("The multiplication simplified is: ");
+        System.out.println("The multiplication is: ");
         c.printFraction();
         c=a.divide(b);
         c.simplify();
