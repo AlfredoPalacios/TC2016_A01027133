@@ -7,7 +7,7 @@ public class Test {
 
         w.getMarried(h);
 
-        h.giveLove();r
+        h.giveLove();
 
     }
     
