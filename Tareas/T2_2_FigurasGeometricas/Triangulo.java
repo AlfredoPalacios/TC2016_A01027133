@@ -2,38 +2,21 @@
  * Triangulo
  */
 public class Triangulo implements RelatedThings{
-    protected String figura;
-    public Triangulo(String figura){
-        this.figura=figura;
+    protected double base;
+    protected double height;
+    public Triangulo(){base=0;height=0;}
+    public Triangulo(double base, double height){
+        this.base = base;
+        this.height = height;
     }
-    public int getNumLados(){
-        return 3;
+    public double getArea(){
+        return (base*height)/2;
     }
-    public int getBaseMa(){
-        return 3;
-    }
-    public int getBaseMe(){
-        return 0;
-    }
-    public int getAltura(){
-        return 4;
-    }
-    public int getDiag1(){
-        return 0;
-    }
-    public int getDiag2(){
-        return 0;
-    }
-    public double getLado1(){
-        return 7.0;
-    }
-    public double getLado2(){
-        return 7.0;
-    }
-    public double getLado3(){
-        return 7.0;
-    }
-    public double getLado4(){
-        return 7.0;
+    public double getPerimeter(){
+        double a = 0;
+        double c = 0;
+        a = base/2;
+        c = Math.sqrt((a*a)+(height*height));
+        return (c+base+height);
     }
 }

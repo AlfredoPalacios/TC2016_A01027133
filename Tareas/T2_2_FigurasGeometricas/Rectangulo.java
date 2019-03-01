@@ -2,38 +2,17 @@
  * Rectangulo
  */
 public class Rectangulo implements RelatedThings{
-    protected String figura;
-    public Rectangulo(String figura){
-        this.figura=figura;
+    protected double base;
+    protected double height;
+    public Rectangulo(){base=0;height=0;}
+    public Rectangulo(double base, double height){
+        this.base = base;
+        this.height = height;
     }
-    public int getNumLados(){
-        return 4;
+    public double getArea(){
+        return base*height;
     }
-    public int getBaseMa(){
-        return 9;
-    }
-    public int getBaseMe(){
-        return 0;
-    }
-    public int getAltura(){
-        return 3;
-    }
-    public int getDiag1(){
-        return 0;
-    }
-    public int getDiag2(){
-        return 0;
-    }
-    public double getLado1(){
-        return 9.0;
-    }
-    public double getLado2(){
-        return 3.0;
-    }
-    public double getLado3(){
-        return 9.0;
-    }
-    public double getLado4(){
-        return 3.0;
+    public double getPerimeter(){
+        return ((base*2)+(height*2));
     }
 }

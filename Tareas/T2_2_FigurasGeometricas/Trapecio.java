@@ -3,38 +3,24 @@
  */
 
 public class Trapecio implements RelatedThings{
-    protected String figura;
-    public Trapecio(String figura){
-        this.figura=figura;
+    protected double baseMa;
+    protected double baseMe;
+    protected double height;
+    public Trapecio(){baseMa=0;baseMe=0;height=0;}
+    public Trapecio(double baseMa, double baseMe, double height){
+        this.baseMa = baseMa;
+        this.baseMe = baseMe;
+        this.height = height;
     }
-    public int getNumLados(){
-        return 4;
+    public double getArea(){
+        return height*(((baseMa+baseMe)/2));
     }
-    public int getBaseMa(){
-        return 8;
-    }
-    public int getBaseMe(){
-        return 5;
-    }
-    public int getAltura(){
-        return 3;
-    }
-    public int getDiag1(){
-        return 0;
-    }
-    public int getDiag2(){
-        return 0;
-    }
-    public double getLado1(){
-        return 8.0;
-    }
-    public double getLado2(){
-        return 5.0;
-    }
-    public double getLado3(){
-        return Math.sqrt(5.25);
-    }
-    public double getLado4(){
-        return Math.sqrt(5.25);
+    public double getPerimeter(){
+        double a = 0;
+        double c = 0;
+        double b = height;
+        a = (baseMa-baseMe)/2;
+        c = Math.sqrt((a*a)+(b*b));
+        return (baseMa+baseMe+2*(c));
     }
 }

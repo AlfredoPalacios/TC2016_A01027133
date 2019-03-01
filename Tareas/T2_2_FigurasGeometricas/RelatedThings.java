@@ -2,6 +2,9 @@
  * RelatedThings
  */
 public interface RelatedThings {
+    double getArea();
+    double getPerimeter();
+    /*
     int getNumLados();
     int getBaseMa();
     int getBaseMe();
@@ -38,4 +41,5 @@ public interface RelatedThings {
         }
         return b.getLado1()+b.getLado2()+b.getLado3()+b.getLado4();
     }
+    */
 }
