@@ -1,4 +1,6 @@
 package Actividades.A4_2_Singleton;
+
+import Actividades.A3_2_Latencia.Latency;
 /**
  * Test
  */
@@ -10,5 +12,6 @@ public class Test {
         Singleton second = Singleton.getInstance();
         second.value = 12;
         System.out.println(s.value);
+        Latency.simulateLatency(1, 10);
     }
 }
