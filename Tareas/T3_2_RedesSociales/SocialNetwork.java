@@ -1,5 +1,6 @@
 package Tareas.T3_2_RedesSociales;
 
+import Actividades.A3_2_Latencia.Latency;
 /**
  * SocialNetwork
  */
@@ -11,7 +12,11 @@ public abstract class SocialNetwork {
     int contT = 0;
     int contI = 0;
 
-    public abstract void addUser();
+    public abstract void addUser(Users u);
 
-    public abstract void post();
+    public abstract void post(String m);
+
+    public void sendData(byte[] mensaje){
+        Latency.simulateLatency(2, 15);
+    }
 }

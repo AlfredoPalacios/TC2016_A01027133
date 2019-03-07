@@ -11,7 +11,6 @@ public class Latency {
         int time = r.nextInt(finalValue-initialValue)+initialValue;
         long start = System.currentTimeMillis();
         while (true) {
-            System.out.print(".");
             long current = System.currentTimeMillis();
             if(current-start >= time*1000)
                 break;

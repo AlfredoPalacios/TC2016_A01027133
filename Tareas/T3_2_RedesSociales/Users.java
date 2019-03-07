@@ -22,4 +22,11 @@ public class Users {
     public String getPassword() {
         return password;
     }
+
+    public boolean equalsUser(Users u){
+        if(username.equalsIgnoreCase(u.getUsername())&&(password.equalsIgnoreCase(u.getPassword()))){
+            return true;
+        }
+        return false;
+    }
 }
