@@ -1,3 +1,5 @@
+package pizzería;
+
 
 public class Gerente {
 	protected static Gerente instance = null;

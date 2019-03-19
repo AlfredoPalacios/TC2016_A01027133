@@ -1,3 +1,5 @@
+package pizzería;
+
 
 public class Sucursal {
 	private String nombre;

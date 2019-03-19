@@ -1,3 +1,5 @@
+package pizzería;
+
 
 public class Ingredientes {
 	private String nombre;
