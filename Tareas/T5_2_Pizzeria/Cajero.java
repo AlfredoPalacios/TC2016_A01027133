@@ -5,7 +5,7 @@ public class Cajero extends Empleado {
 	public Cajero(String nombre, String puesto) {
 		super(nombre, puesto);
 	}
-	public void recibirOrden(TiposDePizza pizza, Chef chef, AyudanteChef ayudanteChef, Repartidor repartidor) {
+	public void recibirOrden2(TiposDePizza pizza, Chef chef, AyudanteChef ayudanteChef, Repartidor repartidor) {
 		System.out.println("Recib� la orden.");
 		pedirPreparacion(pizza, chef, ayudanteChef, repartidor);
 	}
