@@ -1,4 +1,4 @@
-package pizzería;
+package Tareas.T5_2_Pizzeria;
 
 
 public class Polanco extends Sucursal {

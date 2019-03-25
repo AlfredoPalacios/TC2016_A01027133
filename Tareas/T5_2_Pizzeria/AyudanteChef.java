@@ -1,14 +1,15 @@
-package pizzería;
-
+package Tareas.T5_2_Pizzeria;
 
 public class AyudanteChef extends Empleado {
 	public AyudanteChef(String nombre, String puesto) {
 		super(nombre, puesto);
 	}
+
 	public void ayudarChef() {
-		System.out.println("Ayud� al chef a preparar la pizza");
+		System.out.println("Ayude al chef a preparar la pizza");
 	}
+
 	public void ayudarEmpacar() {
-		System.out.println("Ayud� a empacar la pizza");
+		System.out.println("Ayude a empacar la pizza");
 	}
 }
