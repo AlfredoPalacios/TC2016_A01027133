@@ -14,7 +14,7 @@ public class Com {
         comList[3] = amazon;
         comList[4] = ebay;
     }
-    IPDom<String, String> google = new IPDom<String, String>("www.google.com", "192.184.2.1");
+    IPDom<String, String> google = new IPDom<>("www.google.com", "192.184.2.1");
     IPDom<String, String> facebook = new IPDom<>("www.facebook.com", "186.176.5.1");
     IPDom<String, String> instagram = new IPDom<>("www.instagram.com", "183.135.2.1");
     IPDom<String, String> amazon = new IPDom<>("www.amazon.com", "187.185.1.0");
