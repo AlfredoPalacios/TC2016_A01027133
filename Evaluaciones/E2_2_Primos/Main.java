@@ -4,9 +4,12 @@ package Evaluaciones.E2_2_Primos;
  */
 public class Main {
     public static void main(String[] args) {
-        PrimeNumbers n1 = new TwinPrime();
-        PrimeNumbers n2 = new CousinPrime();
-        n1.isPrime(5, 7);
-        n2.isPrime(37, 41);
+        //Tuple<Integer, Integer> par1 = new Tuple<>(5, 7);
+        //Tuple<Integer, Integer> par2 = new Tuple<>(37, 41);
+        TwinPrime twinPrime;
+        twinPrime.getInstance();
+        CousinPrime n2 = new CousinPrime();
+        twinPrime.isPrime(5, 7);
+        //n2.isPrime(37, 41);
     }
 }
