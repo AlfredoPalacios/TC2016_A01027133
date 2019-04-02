@@ -29,7 +29,7 @@ public class CousinPrime extends PrimeNumbers {
         }
         return isPrime;
     }
-    public Tuple nPrime(int n){
+    public Tuple<Integer, Integer> nPrime(int n){
         int n1 = n;
         int n2 = n+4;
         int i2 = 1;

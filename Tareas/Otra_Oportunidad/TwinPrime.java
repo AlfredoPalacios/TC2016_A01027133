@@ -29,7 +29,7 @@ public class TwinPrime extends PrimeNumbers {
         }
         return isPrime;
     }
-    public Tuple nPrime(int n){
+    public Tuple<Integer, Integer> nPrime(int n){
         int n1 = n;
         int n2 = n+2;
         int i2 = 1;
@@ -46,7 +46,7 @@ public class TwinPrime extends PrimeNumbers {
                 System.out.println(e.toString());
             }
         }
-        return null;
+        return new Tuple<Integer, Integer>(n1, n2);
     }
     public static TwinPrime getInstance(){
         if(instance == null){
