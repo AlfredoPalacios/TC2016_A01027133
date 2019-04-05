@@ -33,12 +33,13 @@ public class TwinPrime extends PrimeNumbers {
         int n1 = n;
         int n2 = n+2;
         int i2 = 1;
-        for(int i=2; i<=n; n++){
+        for(int i=2; i<=n; i++){
             try{
-                if(isPrime(i, i+2)){
+                int t = i;
+                if(isPrime(t, t+2)){
                     i2++;
                     if(i2==n){
-                        System.out.println(n1+", "+n2);
+                        //System.out.println(n1+", "+n2+".");
                         return new Tuple<Integer, Integer>(n1, n2);
                     }
                 }
