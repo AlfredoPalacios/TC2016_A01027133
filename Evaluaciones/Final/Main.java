@@ -18,7 +18,7 @@ public class Main {
         Flotantes num6 = new Flotantes();
         num6.setValue(8.2f);
         Flotantes num7 = new Flotantes();
-        num7.setValue(3.3f);
+        num7.setValue(5.3f);
         Flotantes num8 = new Flotantes();
         num8.setValue(6.6f);
         Flotantes num9 = new Flotantes();
@@ -31,8 +31,8 @@ public class Main {
         matrizFlotantes.setXY(2, 1, num6);
         matrizFlotantes.setXY(0, 2, num7);
         matrizFlotantes.setXY(1, 2, num8);
-        matrizFlotantes.setXY(2, 0, num9);
-        matrizFlotantes.getMatrizFlotantes()[1][1].printValue();
+        matrizFlotantes.setXY(2, 2, num9);
+        //matrizFlotantes.getMatrizFlotantes()[2][0].printValue();
         operaciones.transponer(matrizFlotantes);
         operaciones.operacionSuperior(matrizFlotantes);
         operaciones.operacionInferior(matrizFlotantes);

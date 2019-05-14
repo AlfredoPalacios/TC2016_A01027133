@@ -9,7 +9,7 @@ public class Flotantes {
         return value;
     }
     public void printValue(){
-        System.out.println(value);
+        System.out.print(value+" ");
     }
     public void setValue(float value){
         this.value = value;
