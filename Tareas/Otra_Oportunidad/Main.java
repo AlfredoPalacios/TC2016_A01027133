@@ -23,5 +23,9 @@ public class Main {
         System.out.println(num1+", "+num2);
 
         //n2.isPrime(37, 41);
+
+        PalindromePrime p = new PalindromePrime();
+        System.out.print(p.isPrime(131));
+        System.out.print(p.nPrime(8));
     }
 }

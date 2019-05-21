@@ -1,0 +1,8 @@
+TAREA_3_2_REDESSOCIALES
+CALIFICACIÓN: 100
+
+° No necesitas definir 3 arreglos difernetes de Usuarios -uno para cada red social-
+  Recuerda que puedes tener una variable compartida (un único arreglo), pero con 
+  diferentes valores para cada instancia. 
+° el método logOut debería hacer algo más que sólo escribir un mensaje (cambiar el
+  valor de una variable a false, o algo así)
